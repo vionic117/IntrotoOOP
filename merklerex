@@ -49,6 +49,7 @@ int main()
     int userOption;
     std::cin >> userOption;
     std::cout << "You chose: " << userOption << std::endl;
+    if (userOption
 
     if (userOption == 0) // bad input
     {
