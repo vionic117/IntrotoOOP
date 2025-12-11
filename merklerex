@@ -69,7 +69,8 @@ int main()
         }
 
         if (userOption == 0) // bad input
-        {
-        }
+       {
+            std::cout << "Invalid input.  Type 1 - 6 "
+       }
     }
 }
