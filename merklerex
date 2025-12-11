@@ -1,76 +1,79 @@
 #include <iostream>
 int main()
 {
-    // 1 print help
-    std::cout << "1: Print help" << std::endl;
-
-    // 2 print exchange stats
-    std::cout << "2: Pint exchange stats" << std::endl;
-
-    // 3 make an offer
-    std::cout << "3: make an offer" << std::endl;
-
-    // 4 make a bid
-    std::cout << "4: make a bid" << std::endl;
-
-    // 5 print wallet
-    std::cout << "5: print wallet" << std::endl;
-
-    // 6 continue
-    std::cout << "6: continue" << std::endl;
-
-    std::cout << "=================" << std::endl;
-    std::cout << "Type in 1-6" << std::endl;
-
-    int userOption;
-    std::cin >> userOption;
-    std::cout << "You chose: " << userOption << std::endl;
-
+    while (true)
     {
+        // 1 print help
+        std::cout << "1: Print help" << std::endl;
 
-        if (userOption == 1) // 1 print help
-        {
+        // 2 print exchange stats
+        std::cout << "2: Pint exchange stats" << std::endl;
 
-            std::cout << "1: Your aim is to make money" << std::endl;
-        }
-
-        //Print exchange stats
-        if (userOption == 2) // 2 print exchange stats
-        {
-
-            std::cout << "2: Pint exchange stats" << std::endl;
-        }
         // 3 make an offer
-        if (userOption == 3)
-        {
-
-            std::cout << "3: make an offer" << std::endl;
-        }
+        std::cout << "3: make an offer" << std::endl;
 
         // 4 make a bid
-        if (userOption == 4)
-        {
-
-            std::cout << "4: make a bid" << std::endl;
-        }
+        std::cout << "4: make a bid" << std::endl;
 
         // 5 print wallet
-        if (userOption == 5)
-        {
-
-            std::cout << "5: print wallet" << std::endl;
-        }
+        std::cout << "5: print wallet" << std::endl;
 
         // 6 continue
-        if (userOption == 6)
+        std::cout << "6: continue" << std::endl;
+
+        std::cout << "=================" << std::endl;
+        std::cout << "Type in 1-6" << std::endl;
+
+        int userOption;
+        std::cin >> userOption;
+        std::cout << "You chose: " << userOption << std::endl;
+
         {
 
-            std::cout << "Go to next frame" << std::endl;
-        }
+            if (userOption == 1) // 1 print help
+            {
 
-        if (userOption == 0) // bad input
-       {
-            std::cout << "Invalid input.  Type 1 - 6 "
-       }
+                std::cout << "1: Your aim is to make money" << std::endl;
+            }
+
+            //Print exchange stats
+            if (userOption == 2) // 2 print exchange stats
+            {
+
+                std::cout << "2: Pint exchange stats" << std::endl;
+            }
+            // 3 make an offer
+            if (userOption == 3)
+            {
+
+                std::cout << "3: make an offer" << std::endl;
+            }
+
+            // 4 make a bid
+            if (userOption == 4)
+            {
+
+                std::cout << "4: make a bid" << std::endl;
+            }
+
+            // 5 print wallet
+            if (userOption == 5)
+            {
+
+                std::cout << "5: print wallet" << std::endl;
+            }
+
+            // 6 continue
+            if (userOption == 6)
+            {
+
+                std::cout << "Go to next frame" << std::endl;
+            }
+
+            if (userOption == 0) // bad input
+            {
+                std::cout << "Invalid input.  Type 1 - 6 " << std::endl;
+            }
+        }    
     }
 }
