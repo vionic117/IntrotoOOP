@@ -5,7 +5,7 @@ int main()
     if (userOption == 1)// 1 print help 
     { 
     
-        std::cout << "1: Print help" << std::endl;
+        std::cout << "1: Your aim is to make money" << std::endl;
     }
 
     //Print exchange stats
@@ -39,7 +39,7 @@ int main()
      if (userOption == 6)
     {
         
-        std::cout << "6: continue" << std::endl;
+        std::cout << "Go to next frame" << std::endl;
     }
     
 
