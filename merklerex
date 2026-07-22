@@ -1,79 +1,136 @@
+// test_OOP1.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
 #include <iostream>
+
+void printMenu()
+{
+    // 1 print help
+    std::cout << "1: Print help" << std::endl;
+
+    // 2 print exchange stats
+    std::cout << "2: Pint exchange stats" << std::endl;
+
+    // 3 make an offer
+    std::cout << "3: make an offer" << std::endl;
+
+    // 4 make a bid
+    std::cout << "4: make a bid" << std::endl;
+
+    // 5 print wallet
+    std::cout << "5: print wallet" << std::endl;
+
+    // 6 continue
+    std::cout << "6: continue" << std::endl;
+
+    std::cout << "=================" << std::endl;
+    std::cout << "Type in 1-6" << std::endl;
+
+}
+
+int getUserOption()
+{
+    int userOption;
+    std::cin >> userOption;
+    std::cout << "You chose: " << userOption << std::endl;
+    return userOption;
+}
+
+void printHelp()
+{
+	std::cout << "1: Your aim is to make money" << std::endl;
+}
+
+void printExchangeStats()
+{
+	std::cout << "2: Pint exchange stats" << std::endl;
+}
+
+void makeOffer()
+{
+	std::cout << "3: make an offer" << std::endl;
+}
+
+void makeBid()
+{
+	std::cout << "4: make a bid" << std::endl;
+}
+
+void printWallet()
+{
+	std::cout << "5: print wallet" << std::endl;
+}
+
+void continueToNextFrame()
+{
+	std::cout << "Go to next frame" << std::endl;
+}
+
+void invalidInput()
+{
+	std::cout << "Invalid input.  Type 1 - 6 " << std::endl;
+}
+
+void processUserOption(int userOption)
+{
+	if (userOption == 1) // 1 print help
+	{
+		printHelp();
+	}
+	//Print exchange stats
+	if (userOption == 2) // 2 print exchange stats
+	{
+		printExchangeStats();
+	}
+	// 3 make an offer
+	if (userOption == 3)
+	{
+		makeOffer();
+	}
+	// 4 make a bid
+	if (userOption == 4)
+	{
+		makeBid();
+	}
+	// 5 print wallet
+	if (userOption == 5)
+	{
+		printWallet();
+	}
+	// 6 continue
+	if (userOption == 6)
+	{
+		continueToNextFrame();
+	}
+	if (userOption == 0) // bad input
+	{
+		invalidInput();
+	}
+}
 int main()
 {
     while (true)
     {
-        // 1 print help
-        std::cout << "1: Print help" << std::endl;
 
-        // 2 print exchange stats
-        std::cout << "2: Pint exchange stats" << std::endl;
 
-        // 3 make an offer
-        std::cout << "3: make an offer" << std::endl;
+        
+	    printMenu();
+        int userOption = getUserOption();
+		processUserOption(userOption);
 
-        // 4 make a bid
-        std::cout << "4: make a bid" << std::endl;
-
-        // 5 print wallet
-        std::cout << "5: print wallet" << std::endl;
-
-        // 6 continue
-        std::cout << "6: continue" << std::endl;
-
-        std::cout << "=================" << std::endl;
-        std::cout << "Type in 1-6" << std::endl;
-
-        int userOption;
-        std::cin >> userOption;
-        std::cout << "You chose: " << userOption << std::endl;
-
-        {
-
-            if (userOption == 1) // 1 print help
-            {
-
-                std::cout << "1: Your aim is to make money" << std::endl;
-            }
-
-            //Print exchange stats
-            if (userOption == 2) // 2 print exchange stats
-            {
-
-                std::cout << "2: Pint exchange stats" << std::endl;
-            }
-            // 3 make an offer
-            if (userOption == 3)
-            {
-
-                std::cout << "3: make an offer" << std::endl;
-            }
-
-            // 4 make a bid
-            if (userOption == 4)
-            {
-
-                std::cout << "4: make a bid" << std::endl;
-            }
-
-            // 5 print wallet
-            if (userOption == 5)
-            {
-
-                std::cout << "5: print wallet" << std::endl;
-            }
-
-            // 6 continue
-            if (userOption == 6)
-            {
-
-                std::cout << "Go to next frame" << std::endl;
-            }
-
-            if (userOption == 0) // bad input
-            {
-                std::cout << "Invalid input.  Type 1 - 6 " << std::endl;
-            }
-        }    
+           
     }
+	return 0;
 }
+
+// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
+// Debug program: F5 or Debug > Start Debugging menu
+
+// Tips for Getting Started: 
+//   1. Use the Solution Explorer window to add/manage files
+//   2. Use the Team Explorer window to connect to source control
+//   3. Use the Output window to see build output and other messages
+//   4. Use the Error List window to view errors
+//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
+//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
+
